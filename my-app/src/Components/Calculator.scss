@@ -1,0 +1,37 @@
+body {
+    background-color: #333;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+
+    .complete__operation {
+        
+        height: 30px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+.display, .complete__operation{
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 5px;
+}
